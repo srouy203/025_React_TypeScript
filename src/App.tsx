@@ -4,6 +4,8 @@ import ObjectProps from './Component/2. ObjectProps';
 import ArrayListProps from './Component/3. ArrayListProps';
 import AssignProps from './Component/4. AssignProps';
 import ChildrenProps from './Component/5. ChildrenProps';
+import ChildComponent from './Component/6. ChildComponent';
+import OptionalProps from './Component/7. OptionalProps';
 
 function App() {
   const personName = {
@@ -32,6 +34,10 @@ function App() {
       <ArrayListProps personName={arrayPersonName}/>
       <AssignProps status="loading"/>
       <ChildrenProps>Hello welcome to Srouy remix!</ChildrenProps>
+      <ChildComponent>
+        <h3>Ocar will go to LeangSrouy for this year!</h3>
+      </ChildComponent>
+      <OptionalProps name="LeangSrouy" sex="Male" /* age={21} *//>
     </div>
   );
 }
