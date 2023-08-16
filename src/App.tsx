@@ -12,6 +12,10 @@ import EventProps from './Component/8. EventProps';
 import HandleChangeEventProps from './Component/9. HandleChangeEventProps';
 import DestructureProps from './Component/11. DestructureProps';
 import ReusingProps from './Component/13. ReusingProps';
+import UseStateHook from './Component/14. UseStateHook';
+import UseStateFutureHook from './Component/15. UseStateFutureHook';
+import UseStateTypeAssertion from './Component/16. UseStateTypeAssertion';
+import UseReducerHook from './Component/17. UseReducerHook';
 
 function App() {
   const personName = {
@@ -49,6 +53,10 @@ function App() {
       <StyleProps style={{border: "5px solid green", width: "300px", textAlign: "center"}}/>
       <DestructureProps name="Ang LeangSrouy" age={21}/>
       <ReusingProps person={arrayPersonName}/>
+      <UseStateHook/>
+      <UseStateFutureHook/>
+      <UseStateTypeAssertion/>
+      <UseReducerHook/>
     </div>
   );
 }
